@@ -14,7 +14,8 @@ const VerifyEmailScreen = ({ navigation }) => {
 
     try {
       // Call the resend verification endpoint
-      const response = await axios.post('http://192.168.117.199:3000/user/resend', { email });
+      const response = await axios.post('https://project-tptk.onrender.com/user/resend', { email });
+      // const response = await axios.post('http://192.168.117.199:3000/user/resend', { email });
 
       // Handle the response from the server
       if (response.data.status === 'Success') {

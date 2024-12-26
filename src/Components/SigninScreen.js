@@ -13,7 +13,8 @@ const SigninScreen = ({ navigation }) => {
     }
 
     try {
-      const response = await axios.post('http://192.168.117.199:3000/user/signin', {
+      const response = await axios.post('https://project-tptk.onrender.com/user/signin', {
+        // const response = await axios.post('http://192.168.117.199:3000/user/signin', {
         email,
         password,
       });
@@ -21,7 +22,7 @@ const SigninScreen = ({ navigation }) => {
       if (response.data.status === 'Success') {
         setMessage('Signin successful!');
         // Navigate to a home screen or dashboard after successful signin
-        navigation.navigate('Home');
+        navigation.navigate('Success');
       } else {
         setMessage(response.data.message);
       }
