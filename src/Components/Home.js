@@ -26,6 +26,13 @@ const Home = ({ navigation }) => {
                     color="#FF9800" // Orange color for the button
                 />
             </View>
+            <View style={styles.buttonContainer}>
+                <Button 
+                    title=" Slider"
+                    onPress={() => navigation.navigate('TransitionImage')} // Navigate to VerifyEmail screen
+                    color="#FF9800" // Orange color for the button
+                />
+            </View>
         </View>
     );
 };
