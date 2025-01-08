@@ -31,7 +31,7 @@ const TransitionImage = () => {
           useNativeDriver: true,
         }).start();
       });
-    }, 6000); // Change image every 6 seconds
+    }, 3000); // Change image every 6 seconds
 
     // Clear interval on component unmount
     return () => clearInterval(interval);
@@ -68,8 +68,8 @@ const styles = StyleSheet.create({
     marginTop: 20,
     backgroundColor: 'blue', // Vibrant purple color
     borderRadius: 25,
-    paddingVertical: 15,
-    paddingHorizontal: 50,
+    paddingVertical: 10,
+    paddingHorizontal: 25,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
